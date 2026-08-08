@@ -1,0 +1,42 @@
+.page {
+    font-family: Montserrat, sans-serif;
+    color: var(--main-color);
+}
+
+.page__body {
+    min-width: 375px;
+    background-color: var(--bg-color);
+}
+
+.page__body--no-scroll {
+    overflow-y: hidden;
+}
+
+.container {
+    width: min(var(--container-width), 100% - var(--container-padding) * 2);
+    margin: 0 auto;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.text-light .text-regular {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--main-color);
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.title-md {
+    font-weight: 600;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
