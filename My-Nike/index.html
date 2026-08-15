@@ -17,6 +17,7 @@
       href="./icons/nike-favicon-48x48.ico"
       type="image/x-icon"
     />
+    <script defer src="./js/fslightbox.js" type="module"></script>
     <script defer src="./js/index.js" type="module"></script>
     <title>Nike</title>
   </head>
@@ -92,7 +93,7 @@
                 ></use>
                 <use
                   class="burger__icon-cross"
-                  href="./icons/sprite.svg#menu-cross"
+                  href="./icons/sprite.svg#cross"
                 ></use>
               </svg>
             </button>
@@ -383,6 +384,43 @@
               </section>
             </div>
           </section>
+        </div>
+      </section>
+      <section id="characteristics" class="characteristics">
+        <div class="container">
+          <h2 class="characteristics__title title-md section-title">
+            Характеристики
+          </h2>
+          <div class="characteristics__video">
+            <picture class="characteristics__video-preview">
+              <source
+                srcset="./images/characteristics-video-preview.webp"
+                type="img/webp"
+              />
+              <img
+                src="./images/characteristics-video-preview.jpg"
+                alt="Кроссовки Nike Air Mag лежат на жёлтой коробке"
+                width="1240"
+                height="600"
+                loading="lazy"
+              />
+            </picture>
+            <a
+              class="characteristics__video-play-link"
+              href="https://www.youtube.com/watch?v=0yr87UjhAYQ&t=1s"
+              title="Запустить видео"
+              data-fslightbox
+            >
+              <img
+                class="characteristics__video-play-icon"
+                src="./icons/play-icon.svg"
+                width="17"
+                height="24"
+                alt="Запустить видео"
+              />
+            </a>
+          </div>
+          <div class="characteristics__list"></div>
         </div>
       </section>
     </main>

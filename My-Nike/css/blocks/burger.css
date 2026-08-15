@@ -14,13 +14,11 @@
         height: 24px;
     }
 
-    .burger__icon-menu,
-    .burger--open .burger__icon-cross {
+    .burger__icon-cross, .burger--open .burger__icon-menu {
+        display: none;
+    }
+    .burger__icon-menu, .burger--open .burger__icon-cross {
         display: block;
     }
 
-    .burger__icon-cross,
-    .burger--open .burger__icon-menu {
-        display: none;
-    }
 }

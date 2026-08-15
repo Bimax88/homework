@@ -106,19 +106,19 @@
 }
 
 @media(width>992px) {
-    .product__slider-wrapper {
+    .product__sizes-wrapper {
         gap: 20px;
     }
 }
 
 @media(width<=992px) {
-    .product__slider-wrapper {
+    .product__sizes-wrapper {
         gap: 40px;
     }
 }
 
 @media(width<=768px) {
-    .product__slider-wrapper {
+    .product__sizes-wrapper {
         flex-direction: column;
     }
 }
