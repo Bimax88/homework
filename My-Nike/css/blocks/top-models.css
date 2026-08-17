@@ -1,3 +1,7 @@
+.top-models {
+    margin-top: 80px;
+}
+
 .top-models__accent {
     color: var(--accent-color);
 }
@@ -25,7 +29,7 @@
 }
 
 @media (any-hover: hover) {
-    .top-models__product-link {
+    .top-models__product-link:hover {
         color: var(--accent-color);
     }
 }
@@ -55,7 +59,7 @@
     }
 }
 
-.top-models__products-title {
+.top-models__product-title {
     color: currentColor;
 }
 

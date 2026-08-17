@@ -70,18 +70,6 @@
               </svg>
             </button>
             <button
-              class="header__actions-button"
-              title="Корзина"
-              aria-label="Корзина"
-            >
-              <svg width="24" height="24">
-                <use
-                  class="header__actions-icon"
-                  href="./icons/sprite.svg#card"
-                ></use>
-              </svg>
-            </button>
-            <button
               class="header__burger burger"
               aria-label="Открыть меню"
               aria-expanded="false"
@@ -176,17 +164,6 @@
             <div class="product__slider-wrapper">
               <div class="swiper product__slider">
                 <div class="swiper-wrapper">
-                  <button
-                    class="product__slider-button product__slider-button--prev"
-                    aria-label="Предыдущий слайд"
-                  >
-                    <svg width="40" height="40">
-                      <use
-                        class="product__slider-button-icon"
-                        href="./icons/main-sprite.svg#double-arrow"
-                      ></use>
-                    </svg>
-                  </button>
                   <div class="swiper-slide">
                     <div class="product__slide-inner">
                       <picture>
@@ -244,19 +221,30 @@
                       </picture>
                     </div>
                   </div>
-                  <button
-                    class="product__slider-button product__slider-button--next"
-                    aria-label="Следующий слайд"
-                  >
-                    <svg width="40" height="40">
-                      <use
-                        class="product__slider-button-icon"
-                        href="./icons/main-sprite.svg#double-arrow"
-                      ></use>
-                    </svg>
-                  </button>
                 </div>
               </div>
+              <button
+                class="product__slider-button product__slider-button--prev"
+                aria-label="Предыдущий слайд"
+              >
+                <svg width="40" height="40">
+                  <use
+                    class="product__slider-button-icon"
+                    href="./icons/main-sprite.svg#double-arrow"
+                  ></use>
+                </svg>
+              </button>
+              <button
+                class="product__slider-button product__slider-button--next"
+                aria-label="Следующий слайд"
+              >
+                <svg width="40" height="40">
+                  <use
+                    class="product__slider-button-icon"
+                    href="./icons/main-sprite.svg#double-arrow"
+                  ></use>
+                </svg>
+              </button>
             </div>
             <h3 class="product__title title-sm">
               Кроссовки
@@ -333,7 +321,7 @@
                     title="Добавить в корзину"
                   >
                     <img
-                      src="./icons/card-icon.svg"
+                      src="./icons/cart-icon.svg"
                       width="23"
                       height="23"
                       loading="lazy"
@@ -392,12 +380,13 @@
             Характеристики
           </h2>
           <div class="characteristics__video">
-            <picture class="characteristics__video-preview">
+            <picture>
               <source
                 srcset="./images/characteristics-video-preview.webp"
                 type="img/webp"
               />
               <img
+                class="characteristics__video-preview"
                 src="./images/characteristics-video-preview.jpg"
                 alt="Кроссовки Nike Air Mag лежат на жёлтой коробке"
                 width="1240"
@@ -812,5 +801,12 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

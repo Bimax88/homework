@@ -67,10 +67,12 @@
 @media (width <=768px) {
     .product__slider-button--prev {
         right: -5px;
+        transform: translateY(-50%) rotate(180deg);
     }
 
     .product__slider-button--next {
         left: -5px;
+        transform: translateY(-50%) rotate(0deg);
     }
 }
 
