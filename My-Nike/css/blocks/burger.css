@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 @media (width>=768px) {
     .burger {
         display: none;
@@ -6,9 +13,15 @@
 
 @media (width<=768px) {
     .burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         z-index: 4;
         width: 24px;
         height: 24px;
@@ -18,7 +31,7 @@
         display: none;
     }
     .burger__icon-menu, .burger--open .burger__icon-cross {
-        display: block;
+        display: block;  
     }
 
 }

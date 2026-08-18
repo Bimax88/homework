@@ -41,10 +41,10 @@
         >
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#Air Mag" lang="en">Air Mag</a>
+              <a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#size">Размеры</a>
+              <a class="menu__link" href="#sizes">Размеры</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#characteristics">Характеристики</a>
@@ -125,7 +125,7 @@
           </footer>
         </div>
       </section>
-      <section id="#air-mag" class="air-mag">
+      <section id="air-mag" class="air-mag">
         <div class="container">
           <h2 class="air-mag__title title-md">Air Mag</h2>
           <p class="air-mag__description text-regular">
@@ -157,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section id="#sizes" class="sizes section">
+      <section id="sizes" class="sizes section">
         <div class="container">
           <h2 class="sizes__title title-md section-title">Размеры</h2>
           <section class="product">
@@ -314,9 +314,15 @@
                   </button>
                 </div>
                 <div class="product__buy-wrapper">
-                  <button class="product__buy-button">Купить в 1 клик</button>
                   <button
-                    class="product__card-button"
+                    class="product__buy-button"
+                    data-modal-button="buy"
+                    data-modal-speed="300"
+                  >
+                    Купить в 1 клик
+                  </button>
+                  <button
+                    class="product__cart-button"
                     aria-label="Добавить в корзину"
                     title="Добавить в корзину"
                   >
@@ -410,118 +416,118 @@
             </a>
           </div>
           <div class="characteristics__list">
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#laces"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Футуристический дизайн
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Nike Air Mag выделяются своим уникальным и оригинальным
                 дизайном, который сразу же привлекает внимание. Эта модель
                 создана для тех, кто ценит стиль, вдохновленный наукой и
                 фантастикой
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#block"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Автоматическая шнуровка
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Инновационная система автоматической шнуровки обеспечивает
                 идеальную фиксацию обуви на ноге без необходимости вручную
                 завязывать шнурки, что значительно повышает комфорт
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#planet"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Ограниченный выпуск
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Nike Air Mag были выпущены в ограниченном количестве, что делает
                 каждую пару желанным объектом для коллекционеров и любителей
                 уникальных кроссовок
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#laces"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Встроенная подсветка
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Благодаря светодиодной подсветке, кроссовки выглядят эффектно в
                 темное время суток. Это придает им еще больше оригинальности и
                 уникальности
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#block"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Комфорт и поддержка
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Модель предлагает высокий уровень комфорта благодаря
                 качественной амортизации и поддержке стопы, что делает их
                 идеальными для длительного ношения
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#planet"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Современные материалы
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Nike Air Mag изготовлены из высококачественных синтетических
                 материалов, которые обеспечивают долговечность, устойчивость к
                 износу и легкость в уходе
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#laces"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Хорошая сцепляемость
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Подошва кроссовок обладает отличным сцеплением с различными
                 поверхностями, что обеспечивает надежность при ходьбе и беге
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#block"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Культовый статус
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Nike Air Mag стали культовыми благодаря своему появлению в кино
                 "Назад в будущее 2", что подчеркивает их историческую и
                 культурную значимость
               </p>
             </article>
-            <article class="characteristics__card">
-              <svg class="characteristics__card-icon" width="56" height="56">
+            <article class="characteristics__cart">
+              <svg class="characteristics__cart-icon" width="56" height="56">
                 <use href="./icons/characteristics-sprite.svg#planet"></use>
               </svg>
-              <h3 class="characteristics__card-title title-xs">
+              <h3 class="characteristics__cart-title title-xs">
                 Яркое дополнение к любому образу
               </h3>
-              <p class="characteristics__card-description">
+              <p class="characteristics__cart-description">
                 Кроссовки легко вписываются в различные стили одежды, позволяя
                 создавать уникальные образы. Они могут дополнить как спортивный,
                 так и повседневный стиль
@@ -804,9 +810,82 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          
+          <a href="#" class="logo footer__logo">
+            <img
+              class="logo_img"
+              src="./icons/logo-icon.svg"
+              width="50"
+              height="20"
+              alt="Логотип Nike"
+              loading="lazy"
+            />
+          </a>
+          <nav class="menu footer__menu" aria-label="Главное меню">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#sizes">Размеры</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#characteristics">Характеристики</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#top-models ">Другие ТОП модели</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="footer__phone" href="tel:+79292992929">+79292992929</a>
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__window modal-buy" data-modal-window="buy">
+        <button
+          class="modal__close"
+          aria-label="Закрыть"
+          title="Закрыть"
+          data-modal-close
+        >
+          <svg width="24" height="24">
+            <use href="./icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="modal__content modal-buy__content">
+          <h3 class="modal-buy__title title-sm">Заявка на заказ</h3>
+          <div class="modal-buy__form">
+            <label class="modal-buy__label" for="">
+              <input
+                class="modal-buy__input"
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+              />
+            </label>
+            <label class="modal-buy__label" for="">
+              <input
+                class="modal-buy__input"
+                type="tel"
+                placeholder="Номер телефона"
+                name="phone"
+                required
+              />
+            </label>
+            <label class="modal-buy__label" for="">
+              <input
+                class="modal-buy__input"
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                required
+              />
+            </label>
+            <button class="modal-buy__submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

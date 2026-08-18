@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 30px;
 }
 
@@ -9,6 +20,7 @@
     font-size: 13px;
     line-height: 130%;
     color: var(--main-color);
+    -webkit-transition: all var(--transition-time);
     transition: all var(--transition-time);
 }
 
@@ -28,8 +40,12 @@
 }
 
 .header__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 @media (width>=992px) {
@@ -62,16 +78,22 @@
     display: block;
     width: 90%;
     min-height: 11px;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     background-color: var(--accent-color);
     border-radius: 50%;
-    filter: blur(30px);
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all var(--transition-time);
     transition: all var(--transition-time);
 }
 
 .header__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -88,12 +110,19 @@
 
 
 .header__actions-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 24px;
     height: 24px;
     color: var(--main-color);
+    -webkit-transition: all var(--transition-time);
     transition: all var(--transition-time);
 }
 

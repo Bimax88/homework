@@ -1,8 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .header {
-    padding: 32px 0 32px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: var(--layer-1);
+    padding-block: 32px;
+    -webkit-transition: -webkit-box-shadow var(--transition-time);
+    transition: -webkit-box-shadow var(--transition-time);
+    transition: box-shadow var(--transition-time);
+    transition: box-shadow var(--transition-time), -webkit-box-shadow var(--transition-time);
     background-color: var(--bg-color);
-    transition: all var(--transition-time);
 }
 
 .header--fixed {
@@ -10,13 +24,20 @@
     top: 0;
     right: 0;
     left: 0;
+    -webkit-box-shadow: 0 0 20px var(--shadow-color);
     box-shadow: 0 0 20px var(--shadow-color);
     overflow-y: hidden;
 }
 
 .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -28,6 +49,8 @@
     }
 
     .header__menu {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
     }
 }
@@ -40,12 +63,16 @@
         bottom: 0;
         z-index: var(--layer-2);
         min-width: 297px;
+        padding: 144px 15px 20px 0;
         padding-top: 144px;
         padding-right: 15px;
         background-color: var(--bg-color);
+        -webkit-box-shadow: 0 0 20px var(--shadow-color);
         box-shadow: 0 0 20px var(--shadow-color);
+        overflow-y: auto;
         opacity: 0;
         visibility: hidden;
+        -webkit-transition: all var(--transition-time);
         transition: all var(--transition-time);
     }
 
@@ -56,7 +83,12 @@
     }
 
     .header__menu .menu__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
         align-items: flex-end;
         text-align: end;
     }

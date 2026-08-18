@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .characteristics__video {
     position: relative;
 
@@ -25,22 +32,35 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 50%;
-    background-color: var(--overlay-color);
+    background-color: #2a2a2980;
     border: 1px solid var(--main-color);
-    box-shadow: var(--shadow-glow), inset var(--shadow-glow);
-    transform: translate(-50%, -50%);
+    -webkit-box-shadow: var(--shadow-glow), inset var(--shadow-glow);
+            box-shadow: var(--shadow-glow), inset var(--shadow-glow);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: border-color var(--transotion-time), -webkit-box-shadow var(--transition-time);
+    transition: border-color var(--transotion-time), -webkit-box-shadow var(--transition-time);
     transition: border-color var(--transotion-time), box-shadow var(--transition-time);
+    transition: border-color var(--transotion-time), box-shadow var(--transition-time), -webkit-box-shadow var(--transition-time);
 
 }
 
 @media (any-hover: hover) {
     .characteristics__video-play-link:hover {
         border: 1px solid var(--accent-color);
-        box-shadow: var(--shadow-accent-glow), inset var(--shadow-accent-glow);
+        -webkit-box-shadow: var(--shadow-accent-glow), inset var(--shadow-accent-glow);
+                box-shadow: var(--shadow-accent-glow), inset var(--shadow-accent-glow);
     }
 }
 
@@ -53,7 +73,9 @@
     .characteristics__video-play-icon {
         width: 17px;
         height: 24px;
-        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+            -ms-transform: translateX(2px);
+                transform: translateX(2px);
     }
 }
 
@@ -66,38 +88,43 @@
     .characteristics__video-play-icon {
         width: 10px;
         height: 13px;
-        transform: translateX(1px);
+        -webkit-transform: translateX(1px);
+            -ms-transform: translateX(1px);
+                transform: translateX(1px);
     }
 }
 
 .characteristics__list {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     gap: 40px 20px;
 }
 
-.characteristics__card-icon {
+.characteristics__cart-icon {
     margin-bottom: 4px;
-    transform: translateX(-8px);
+    -webkit-transform: translateX(-8px);
+        -ms-transform: translateX(-8px);
+            transform: translateX(-8px);
 }
 
 /* @media (width>576px) {
-    .characteristics__card-icon {
+    .characteristics__cart-icon {
         width: 56px;
     }
 } */
 @media (width<=576px) {
-    .characteristics__card-icon {
+    .characteristics__cart-icon {
         width: 48px;
         height: 48px;
     }
 }
 
-.characteristics__card-title {
+.characteristics__cart-title {
     margin-bottom: 20px;
 }
 
-.characteristics__card-description {
+.characteristics__cart-description {
     font-weight: 300;
     font-size: 14px;
     line-height: 1.4;
