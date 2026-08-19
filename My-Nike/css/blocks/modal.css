@@ -21,7 +21,7 @@
     background: var(--overlay);
     text-align: center;
     -webkit-transition: opacity var(--transition-time) visibility var(--transition-time);
-    transition: opacity var(--transition-time) visibility var(--transition-time);
+    transition: opacity var(--transition-time), visibility var(--transition-time);
 }
 
 .modal::before {
