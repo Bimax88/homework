@@ -1,0 +1,19 @@
+.reviews {
+}
+.reviews__title {
+}
+@media (width<500px) {
+    .reviews__title {
+        line-height: 1.2;
+    }
+}
+.reviews__slider-wrapper {
+}
+.reviews__item {
+}
+.reviews__stars {
+}
+.reviews__name {
+}
+.reviews__text {
+}

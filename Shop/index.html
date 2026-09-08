@@ -1,0 +1,745 @@
+<!doctype html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script> -->
+    <!-- <link
+      rel="shortcut icon"
+      href="./icons/nike-favicon-48x48.ico"
+      type="image/x-icon"
+    /> -->
+    <!-- <script defer src="./js/fslightbox.js" type="module"></script>
+    <script defer src="./js/index.js" type="module"></script> -->
+    <title>Shopick</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo header__logo">shop.co </a>
+        <nav
+          class="menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#" lang="en">Магазин</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#sizes">Скидки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#characteristics"
+                >Новые поступления</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#top-models ">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search-wrapper">
+          <button class="search-button" aria-label="Найти">
+            <svg class="search-icon" width="24" height="24">
+              <use href="./icons/sprites/main-sprite.svg#search"></use>
+            </svg>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Искать товары..."
+              aria-label="Поиск товаров"
+            />
+          </button>
+        </div>
+        <div class="header__actions">
+          <button
+            class="header__actions-button"
+            title="Корзина"
+            aria-label="Корзина"
+          >
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/sprites/main-sprite.svg#cart"
+              ></use>
+            </svg>
+          </button>
+          <button
+            class="header__actions-button"
+            title="Профиль"
+            aria-label="Профиль"
+          >
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/sprites/main-sprite.svg#profile"
+              ></use>
+            </svg>
+          </button>
+          <!-- <button
+              class="header__burger burger"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+            >
+              <svg width="24" height="24">
+                <use
+                  class="burger__icon-menu"
+                  href="./icons/sprite.svg#burger"
+                ></use>
+                <use
+                  class="burger__icon-cross"
+                  href="./icons/sprite.svg#cross"
+                ></use>
+              </svg>
+            </button> -->
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content-wrapper">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+              </h1>
+              <p class="hero__text">
+                Просмотрите наш набор тщательно сделанной одежды, созданный
+                чтобы подчеркнуть ваш индивидуальный стиль.
+              </p>
+              <button class="hero__button button--buy-now">
+                Купить сейчас
+              </button>
+              <div class="hero__benefits-list">
+                <div class="hero__benefits-item">
+                  <div class="hero__benefits-number">200+</div>
+                  <div class="hero__benefits-text title-xs">
+                    Всемирных брендов
+                  </div>
+                </div>
+                <div class="hero__separator"></div>
+                <div class="hero__benefits-item">
+                  <div class="hero__benefits-number">2,000+</div>
+                  <div class="hero__benefits-text title-xs">
+                    Качественных товаров
+                  </div>
+                </div>
+                <div class="hero__separator"></div>
+                <div class="hero__benefits-item">
+                  <div class="hero__benefits-number">30,000+</div>
+                  <div class="hero__benefits-text title-xs">
+                    Счастливых клиентов
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__img">
+              <picture class="top-models__product-img-wrapper">
+                <source src="./images/hero-img.webp" type="image/webp" />
+                <img
+                  src="./images/hero-img.png"
+                  alt="Мужчина и женщина в модных, крутых и качественных вещах"
+                />
+              </picture>
+            </div>
+            <div class="hero__icon-bg">
+              <img src="./icons/hero-stars.svg" alt="Звёздочки" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container">
+          <ul class="brand__list">
+            <li class="brand__item">
+              <svg width="167" height="34">
+                <use href="./icons/sprites/brand-sprite.svg#versace"></use>
+              </svg>
+            </li>
+            <li class="brand__item">
+              <svg width="91" height="38">
+                <use href="./icons/sprites/brand-sprite.svg#zara"></use>
+              </svg>
+            </li>
+            <li class="brand__item">
+              <svg width="156" height="36">
+                <use href="./icons/sprites/brand-sprite.svg#gucci"></use>
+              </svg>
+            </li>
+            <li class="brand__item">
+              <svg width="194" height="32">
+                <use href="./icons/sprites/brand-sprite.svg#prada"></use>
+              </svg>
+            </li>
+            <li class="brand__item">
+              <svg width="207" height="34">
+                <use href="./icons/sprites/brand-sprite.svg#calvin-klein"></use>
+              </svg>
+            </li>
+            <li class="brand__item-mob">
+              <svg width="117" height="24">
+                <use href="./icons/sprites/brand-sprite.svg#versace-mob"></use>
+              </svg>
+            </li>
+            <li class="brand__item-mob">
+              <svg width="64" height="27">
+                <use href="./icons/sprites/brand-sprite.svg#zara-mob"></use>
+              </svg>
+            </li>
+            <li class="brand__item-mob">
+              <svg width="110" height="26">
+                <use href="./icons/sprites/brand-sprite.svg#gucci-mob"></use>
+              </svg>
+            </li>
+            <li class="brand__item-mob">
+              <svg width="127" height="21">
+                <use href="./icons/sprites/brand-sprite.svg#prada-mob"></use>
+              </svg>
+            </li>
+            <li class="brand__item-mob">
+              <svg width="135" height="22">
+                <use
+                  href="./icons/sprites/brand-sprite.svg#calvin-klein-mob"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="additions">
+        <div class="container">
+          <div class="additions__title">
+            <h2 class="title-md">новые поступления</h2>
+          </div>
+          <div class="addition__product-row">
+            <article class="additions__products">
+              <div class="addition__img">
+                <img src="./images/addition-img-1.png" alt="" />
+              </div>
+              <div class="addition__info">
+                <div class="addition__name title-sm">Футболка с лентой</div>
+                <div class="addition__rating-wrapper">
+                  <div class="addition__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use
+                        href="./icons/sprites/main-sprite.svg#star-half"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="addition__rating-number">4,5/<span>5</span></div>
+                </div>
+                <div class="addition__price price">₽5000</div>
+              </div>
+            </article>
+            <article class="additions__products">
+              <div class="addition__img">
+                <img src="./images/addition-img-2.png" alt="" />
+              </div>
+              <div class="addition__info">
+                <div class="addition__name title-sm">Узкие джинсы</div>
+                <div class="addition__rating-wrapper">
+                  <div class="addition__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use
+                        href="./icons/sprites/main-sprite.svg#star-half"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="addition__rating-number">3,5/<span>5</span></div>
+                </div>
+                <div class="addition__price price">
+                  ₽5000<span class="price-discount">₽6000</span>
+                  <div class="addition__discount-procent discount-procent">
+                    20%
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="additions__products">
+              <div class="addition__img">
+                <img src="./images/addition-img-3.png" alt="" />
+              </div>
+              <div class="addition__info">
+                <div class="addition__name title-sm">Клетчатая рубашка</div>
+                <div class="addition__rating-wrapper">
+                  <div class="addition__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div class="addition__rating-number">5/<span>5</span></div>
+                </div>
+                <div class="addition__price price">₽7000</div>
+              </div>
+            </article>
+            <article class="additions__products">
+              <div class="addition__img">
+                <img src="./images/addition-img-4.png" alt="" />
+              </div>
+              <div class="addition__info">
+                <div class="addition__name title-sm">Футболка с полосами</div>
+                <div class="addition__rating-wrapper">
+                  <div class="addition__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use
+                        href="./icons/sprites/main-sprite.svg#star-half"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="addition__rating-number">4,5/<span>5</span></div>
+                </div>
+                <div class="addition__price price">
+                  ₽6000<span class="price-discount">₽8000</span>
+                  <div class="addition__discount-procent discount-procent">
+                    30%
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="button-wrapper">
+            <button class="button--view-all">Посмотреть всё</button>
+          </div>
+        </div>
+      </section>
+      <section class="top-sales">
+        <div class="container">
+          <div class="top-sales__line line"></div>
+          <div class="top-sales__title">
+            <h2 class="title-md">ЛИДЕРЫ ПРОДАЖ</h2>
+          </div>
+          <div class="top-sales__product-row">
+            <article class="top-sales__products">
+              <div class="top-sales__img">
+                <img src="./images/top-sales-img-1.png" alt="" />
+              </div>
+              <div class="top-sales__info">
+                <div class="top-sales__name title-sm">Футболка с лентой</div>
+                <div class="top-sales__rating-wrapper">
+                  <div class="top-sales__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div class="top-sales__rating-number">5/<span>5</span></div>
+                </div>
+                <div class="top-sales__price price">
+                  ₽5000<span class="price-discount">₽6000</span>
+                  <div class="top-sales__discount-procent discount-procent">
+                    20%
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="top-sales__products">
+              <div class="top-sales__img">
+                <img src="./images/top-sales-img-2.png" alt="" />
+              </div>
+              <div class="top-sales__info">
+                <div class="top-sales__name title-sm">Футболка «Courage»</div>
+                <div class="top-sales__rating-wrapper">
+                  <div class="top-sales__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div class="top-sales__rating-number">4/<span>5</span></div>
+                </div>
+                <div class="top-sales__price price">₽5000</div>
+              </div>
+            </article>
+            <article class="top-sales__products">
+              <div class="top-sales__img">
+                <img src="./images/top-sales-img-3.png" alt="" />
+              </div>
+              <div class="top-sales__info">
+                <div class="top-sales__name title-sm">Свободные бермуды</div>
+                <div class="top-sales__rating-wrapper">
+                  <div class="top-sales__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div class="top-sales__rating-number">3/<span>5</span></div>
+                </div>
+                <div class="top-sales__price price">₽4000</div>
+              </div>
+            </article>
+            <article class="top-sales__products">
+              <div class="top-sales__img">
+                <img src="./images/top-sales-img-4.png" alt="" />
+              </div>
+              <div class="top-sales__info">
+                <div class="top-sales__name title-sm">Узкие джинсы</div>
+                <div class="top-sales__rating-wrapper">
+                  <div class="top-sales__rating-stars">
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use href="./icons/sprites/main-sprite.svg#star"></use>
+                    </svg>
+                    <svg width="18" height="17">
+                      <use
+                        href="./icons/sprites/main-sprite.svg#star-half"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="top-sales__rating-number">4,5/<span>5</span></div>
+                </div>
+                <div class="top-sales__price price">₽7000</div>
+              </div>
+            </article>
+          </div>
+          <div class="button-wrapper">
+            <button class="button--view-all">Посмотреть всё</button>
+          </div>
+        </div>
+      </section>
+      <section class="styles">
+        <div class="container">
+          <div class="styles-wrapper">
+            <div class="styles__title title-md">
+              Выбери <br />
+              свой стиль
+            </div>
+            <div class="styles__content">
+              <!-- 1. Свободный -->
+              <div class="styles__content-item">
+                <div class="styles__content-text">Свободный</div>
+                <div class="styles__content-img">
+                  <picture>
+                    <source
+                      media="(max-width: 1300px)"
+                      srcset="./images/styles-img-1-mob.png"
+                    />
+                    <img
+                      src="./images/styles-img-1.png"
+                      alt="Свободный стиль"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <!-- 2. Формальный -->
+              <div class="styles__content-item">
+                <div class="styles__content-text">Формальный</div>
+                <div class="styles__content-img">
+                  <picture>
+                    <source
+                      media="(max-width: 1300px)"
+                      srcset="./images/styles-img-2-mob.png"
+                    />
+                    <source
+                      srcset="./images/styles-img-2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/styles-img-2.png"
+                      alt="Формальный стиль"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <!-- 3. Вечерний -->
+              <div class="styles__content-item">
+                <div class="styles__content-text">Вечерний</div>
+                <div class="styles__content-img">
+                  <picture>
+                    <source
+                      media="(max-width: 1300px)"
+                      srcset="./images/styles-img-3-mob.png"
+                    />
+                    <source
+                      srcset="./images/styles-img-3.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/styles-img-3.png"
+                      alt="Вечерний стиль"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <!-- 4. Спорт -->
+              <div class="styles__content-item">
+                <div class="styles__content-text">Спорт</div>
+                <div class="styles__content-img">
+                  <picture>
+                    <source
+                      media="(max-width: 1300px)"
+                      srcset="./images/styles-img-4-mob.png"
+                    />
+                    <img
+                      src="./images/styles-img-4.png"
+                      alt="Спортивный стиль"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title title-md">что о нас говорят</h2>
+          <div class="reviews__slider-wrapper">
+            <div class="reviews__item">
+              <div class="reviews__stars"></div>
+              <div class="reviews__name"></div>
+              <div class="reviews__text"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="news__wrapper">
+            <div class="news__title">
+              БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ
+            </div>
+            <div class="news__form-wrapper">
+              <form class="news__form">
+                <svg width="24" height="24">
+                  <use href="./icons/sprites/main-sprite.svg#mail"></use>
+                </svg>
+                <input
+                  type="email"
+                  class="news__input"
+                  placeholder="Ваша почта"
+                  required
+                />
+              </form>
+              <button type="submit" class="news__button">
+                Подписаться на рассылку
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__top-col footer__top-col--main">
+              <div class="footer__logo logo">SHOP.CO</div>
+              <div class="footer__item-text">
+                У нас есть одежда, что подходит вашему стилю и которой можно
+                гордиться. Для женщин и мужчин.
+              </div>
+              <div class="footer__item-socials">
+                <div class="footer__item-social">
+                  <svg class="footer__social-icon" width="28" height="28">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#twitter"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__item-social">
+                  <svg class="footer__social-icon" width="28" height="28">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#facebook"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__item-social">
+                  <svg class="footer__social-icon" width="28" height="28">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#instagram"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__item-social">
+                  <svg class="footer__social-icon" width="28" height="28">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#github"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="footer__top-col">
+              <h3 class="footer__top-title">Компания</h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">О нас</li>
+                <li class="footer__top-item">Функции</li>
+                <li class="footer__top-item">Работы</li>
+                <li class="footer__top-item">Карьера</li>
+              </ul>
+            </div>
+            <div class="footer__top-col">
+              <h3 class="footer__top-title">Помощь</h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">Поддержка</li>
+                <li class="footer__top-item">Доставка</li>
+                <li class="footer__top-item">Условия</li>
+                <li class="footer__top-item">Политика</li>
+              </ul>
+            </div>
+            <div class="footer__top-col">
+              <h3 class="footer__top-title">Вопросы</h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">Аккаунт</li>
+                <li class="footer__top-item">О доставке</li>
+                <li class="footer__top-item">Заказы</li>
+                <li class="footer__top-item">Платежи</li>
+              </ul>
+            </div>
+            <div class="footer__top-col">
+              <h3 class="footer__top-title">Ресурсы</h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">Бесплатные книги</li>
+                <li class="footer__top-item">Уроки</li>
+                <li class="footer__top-item">Блог</li>
+                <li class="footer__top-item">Плейлист на YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__line line"></div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-item">
+              Shop.co © 2000-2023, Все права защищены
+            </div>
+            <div class="footer__bottom-item">
+              <div class="footer__pay-list">
+                <div class="footer__pay-item">
+                  <svg
+                    class="footer__pay-icon"
+                    width="65"
+                    height="49"
+                    viewBox="0 0 65 49"
+                  >
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#visa"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__pay-item">
+                  <svg class="footer__pay-icon" width="65" height="49">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#mastercard"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__pay-item">
+                  <svg class="footer__pay-icon" width="65" height="49">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#paypal"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__pay-item">
+                  <svg class="footer__pay-icon" width="65" height="49">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#applepay"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="footer__pay-item">
+                  <svg class="footer__pay-icon" width="65" height="49">
+                    <use
+                      href="./icons/sprites/socals-cards-sprite.svg#googlepay"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

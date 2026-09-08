@@ -1,0 +1,153 @@
+.footer {
+    padding-top: 140px;
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 80px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (width <=850px) {
+    .footer__top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+.footer__top-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width<=850px) {
+    .footer__top-col--main {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+}
+
+/* @media (max-width: 1024px) {
+    .footer__top-col--main {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+} */
+
+.footer__logo {}
+
+.footer__item-text {
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 1.57143;
+    color: var(--grey-text);
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+@media (width<=850px) {
+    .footer__item-text {
+        max-width: 100%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.footer__item-socials {
+    display: flex;
+    gap: 12px;
+}
+
+@media (width<=850px) {
+    .footer__item-socials {
+        margin-bottom: 20px;
+    }
+}
+
+.footer__item-social {}
+
+.footer__social-icon {
+    fill: white;
+}
+
+.footer__top-title {
+    font-weight: 500;
+    line-height: 1.125;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+@media (width<=850px) {
+    .footer__top-title {
+        font-size: 14px;
+        line-height: 1.28571;
+        letter-spacing: 0.21em;
+    }
+}
+
+.footer__top-list {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1875;
+    color: var(--grey-text);
+    gap: 26px;
+}
+
+@media (width<=850px) {
+    .footer__top-list {
+        font-size: 14px;
+        line-height: 1.14286;
+        gap: 16px;
+    }
+}
+
+.footer__top-item {
+    width: 100%;
+}
+
+.footer__line {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@media (width<=850px) {
+    .footer__line {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    }
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (width<=850px) {
+    .footer__bottom {
+        flex-direction: column;
+    }
+}
+
+
+.footer__bottom-item {
+    font-size: 14px;
+    color: var(--grey-text);
+}
+
+.footer__pay-list {
+    display: flex;
+    transform: translateY(4px);
+}
+
+.footer__pay-item {}
+
+.footer__pay-icon {
+    fill: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 0px 4px 0 rgba(183, 183, 183, 0.08), 0 4px 9px 0 rgba(183, 183, 183, 0.08); */
+}

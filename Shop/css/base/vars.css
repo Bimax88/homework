@@ -1,0 +1,42 @@
+:root {
+  /* font-family */
+  --font-family: "Satoshi", sans-serif;
+  --second-family: "FONTSPRING DEMO - Integral CF Heavy", sans-serif;
+  --third-family: "Integral CF", sans-serif;
+  --font3: "Inter", sans-serif;
+
+
+  /* colors */
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --grey-text: rgba(0, 0, 0, 0.6);
+  /* --main-glow-color: #ffffff4d; */
+  --accent-color: #ffea00;
+  --accent-glow-color: #ffea004d;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f0f0f0;;
+  --secondary-color: #000000;
+  --disabled-color: #5d5d56;
+  --disabled-glow-color: #5d5d564d;
+  --shadow-color: #181817;
+  --overlay: linear-gradient(rgba(30,30,30,0.9), #000 1810%);
+  /* #2a2a2980 */
+
+  /* shadows */
+  --shadow-glow: 0 0 6px 2px var(--main-glow-color);
+  --shadow-accent-glow: 0 0 6px 2px var(--accent-glow-color);
+  --shadow-disabled-glow: 0 0 6px 2px var(--disabled-glow-color);
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* transitions */
+  --transition-time: 0.3s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}
