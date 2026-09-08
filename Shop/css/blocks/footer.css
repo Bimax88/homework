@@ -75,6 +75,7 @@
 .footer__top-title {
     font-weight: 500;
     line-height: 1.125;
+    font-size: 16px;
     letter-spacing: 0.19em;
     text-transform: uppercase;
     margin-bottom: 26px;
