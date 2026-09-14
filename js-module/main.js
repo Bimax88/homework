@@ -30,7 +30,7 @@ if (number % 2 === 0) {
   console.log("Нечётное");
 }
 let age2 = 19;
-let discount = age2 > 65 ? 30 : age2 > 18 ? 20 : 10;
+let discount = age2 > 65 ? 30 : age2 >= 18 ? 20 : 10;
 console.log(discount);
 
 let login = prompt("Введите имя пользователя:");
