@@ -1,27 +1,26 @@
-let Name = "Иван Иванов";
+// let Name = "Иван Иванов";
 
-let isStudent = Name === "Иван Иванов";
+// let isStudent = Name === "Иван Иванов";
 
-let age = "18";
-let currentYear = "2026";
+// let age = "18";
+// let currentYear = "2026";
 
-let birthYear = currentYear - age;
+// let birthYear = currentYear - age;
 
-console.log(Name);
-console.log(birthYear);
+// console.log(Name);
+// console.log(birthYear);
 
-console.log(`Меня зовут ${Name}, мне ${age} лет. Я ученик курса: ${isStudent}`);
+// console.log(`Меня зовут ${Name}, мне ${age} лет. Я ученик курса: ${isStudent}`);
 
-let a = "123";
-let b = +"456";
-let c = Number("789");
-let d = Boolean("0");
-let e = Boolean(" ");
-let result = a + b + c + d + e;
+// let a = "123";
+// let b = +"456";
+// let c = Number("789");
+// let d = Boolean("0");
+// let e = Boolean(" ");
+// let result = a + b + c + d + e;
 
-console.log(result);
+// console.log(result);
 
-// 2 На проверке!!!!
 
 let number = 1;
 
