@@ -1,0 +1,129 @@
+.hero {
+    position: relative;
+    height: 100%;
+    background: #f2f0f1;
+}
+
+.container {}
+
+.hero__content-wrapper {
+    position: relative;
+    padding-bottom: 115px;
+}
+
+.hero__content {
+    position: relative;
+    z-index: var(--layer-1);
+}
+
+.hero__title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    /* 390px to 1300px */
+    font-size: clamp(32px, 1.33rem + 2.75vw, 57px);
+    line-height: 1.12281;
+    max-width: 644px;
+    padding-top: 105px;
+}
+
+.hero__text {
+    color: var(--grey-text);
+    /* 390px to 1300px */
+    font-size: clamp(14px, 0.821rem + 0.22vw, 16px);
+    line-height: 1.57143;
+    max-width: 551px;
+    margin: 24px 0;
+}
+
+.hero__button {
+    margin-bottom: 48px;
+}
+
+.hero__benefits-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 644px;
+}
+
+@media (width<=450px) {
+    .hero__benefits-list {
+        display: flex;
+        justify-content: center;
+        max-width: 344px;
+        flex-wrap: wrap;
+    }
+}
+
+.hero__benefits-item {}
+
+@media (width<=450px) {
+    .hero__benefits-item:nth-child(2) {
+        margin-left: auto;
+    }
+
+    .hero__benefits-item:last-child {
+        margin-top: 12px;
+    }
+}
+
+.hero__separator {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 74px;
+    height: 0;
+    rotate: 90deg;
+}
+
+@media (width<=450px) {
+
+    .hero__separator {
+        width: 52px;
+    }
+
+    .hero__separator:nth-child(4) {
+        display: none;
+    }
+}
+
+.hero__benefits-number {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 1.071rem + 1.76vw, 2.5rem);
+}
+
+.hero__benefits-text {
+    font-size: clamp(0.75rem, 0.643rem + 0.44vw, 1rem);
+}
+
+.hero__img {
+    position: absolute;
+    top: 107px;
+    clip-path: inset(0 0 0 50%);
+    /* обрезает 30% справа */
+    z-index: var(--layer-0);
+}
+
+@media (width>1300px) {
+    .hero__img {
+        display: block;
+    }
+
+    .hero__icon-bg {
+        display: block;
+    }
+}
+
+@media (width<1280px) {
+    .hero__img {
+        display: none;
+    }
+
+    .hero__icon-bg {
+        display: none;
+    }
+}
+
+.hero__icon-bg {
+    position: absolute;
+    top: 160px;
+    right: 0;
+}

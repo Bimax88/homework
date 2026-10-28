@@ -1,0 +1,202 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* Чтобы шапка была поверх контента */
+    background-color: var(--main-bg-color);
+    /* Белый фон, чтобы контент не просвечивал */
+    transition: box-shadow var(--transition-time);
+}
+
+/* Красивая тень, когда шапка прилипла (опционально, через JS) */
+.header--sticky {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    height: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.black-banner {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Стили для мобильного меню */
+@media (width >768px) {
+
+    /* Кнопка бургера поверх меню */
+    .header__burger {
+display: none;
+    }
+}
+
+@media (width <=768px) {
+
+    /* Кнопка бургера поверх меню */
+    .header__burger {
+        position: relative;
+        z-index: 5;
+        /* Меню 4, шапка 5 */
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--main-bg-color);
+        /* Белый фон */
+        z-index: 4;
+
+        transform: translateX(-100%);
+        transition: transform var(--transition-time) ease;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+    }
+
+    /* Меню выезжает, когда на .header висит класс --open */
+    .header--open .header__menu {
+        transform: translateX(0);
+    }
+
+    /* Ссылки в колонку и покрупнее */
+    .header__menu .menu__list {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header__menu .menu__link {
+        font-size: 24px;
+        /* Сделал крупнее, чтобы красиво смотрелось на весь экран */
+        font-weight: 500;
+        color: var(--black-color);
+    }
+}
+
+.black-banner span {
+    margin-right: 5px;
+}
+
+@media (width<=650px) {
+    .black-banner span {
+        display: none;
+    }
+}
+
+.black-banner a {
+    text-decoration: underline;
+    font-weight: 500;
+    color: #fff;
+}
+
+.black-banner__close {
+    display: flex;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .black-banner__close:hover {
+        opacity: 0.6;
+    }
+}
+
+
+.header__logo {}
+
+.menu {}
+
+.header__menu {}
+
+.menu__list {
+    display: flex;
+    gap: 24px;
+    white-space: nowrap;
+}
+
+.menu__item {}
+
+.menu__link {
+    color: var(--secondary-color);
+}
+
+.header__controls {
+    display: flex;
+}
+
+.header__order {}
+
+.header__search-wrapper {
+    border-radius: 62px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    width: 462px;
+    height: 48px;
+    background-color: var(--secondary-bg-color);
+}
+
+.search-input {}
+
+.search-button {
+    display: flex;
+    gap: 12px;
+}
+
+@media (width <=1024px) {
+    .header__search-wrapper {
+        display: none;
+    }
+}
+
+.search-button-mob {
+    display: none;
+}
+
+@media (width <=1024px) {
+    .search-button-mob {
+        display: block;
+    }
+
+    .search-icon use {
+        fill: #000;
+    }
+}
+
+.search-icon {
+    fill: rgba(0, 0, 0, 0.4);
+}
+
+.header__actions {
+    display: flex;
+    gap: 14px;
+}
+
+.header__actions-button {}
+
+.header__actions-icon {}
+
+.header__burger {}
+
+.burger {}
+
+.burger__icon-menu {}
+
+.burger__icon-cross {}
